@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Francisco Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <nav class="main-nav">
+
+    <ul>
+        <li><a href="#" >Home</a></li>
+        <li><a href="#" >GitHub</a></li>
+        <li><a href="#" >Contact me</a></li>
+
+        <li><a href="#" class="btn1">Log in</a></li>
+
+
+    </ul>
+  </nav>
+<!--top container-->
+<section class="top-container">
+
+  <header class="intro">
+  <h1>Francisco static Website</h1>
+  <p>This website was done using Javascript, CSS3 and HTML5, and jQuery to make it responsive. No frameworks used here.</p>
+  <div class="play">
+  <a href="#" class="btn">Get started</a>
+
+  <i class="far fa-play-circle fa-3x"></i>
+  <p>Watch video</p>
+</div>
+</header>
+
+
+</section>
+
+
+<!--boxes section-->
+<section class="boxes">
+<div class="box">
+<i class="far fa-bell fa-8x"></i>
+    <h3>Real time notification</h3>
+    <p>the majority have suffered alteration in some form, by injected humour</p>
+</div>
+
+
+    <div class="box">
+        <i class="far fa-comments fa-8x"></i>
+        <h3>Social connection</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, </p>
+    </div>
+
+
+        <div class="box">
+        <i class="fas fa-tasks  fa-8x"></i>
+            <h3>Gradual progress</h3>
+            <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look</p>
+        </div>
+
+
+
+</section>
+<!--break-->
+<section class="how">
+  <h3>How its works?</h3>
+
+  </section>
+<!--smaller boxes -->
+<section class="sboxes">
+    <div class="box">
+<i class="fas fa-users fa-4x"></i>
+        <h3>Create acount</h3>
+
+    </div>
+
+
+        <div class="box">
+<i class="fas fa-pencil-ruler fa-4x"></i>
+            <h3>Customize your site</h3>
+
+        </div>
+
+
+            <div class="box">
+<i class="fab fa-firefox fa-4x"></i>
+                <h3>Get your website</h3>
+
+            </div>
+
+
+
+    </section>
+
+<!--info section-->
+<section class="infoslide">
+<div class="notes">
+  <i class="fas fa-tablet-alt fa-8x"></i>
+</div>
+<!--   <div class="tx">
+    <h2>1.Customize your site</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur ipsum. In nulla ante.
+
+</p>
+</div> -->
+
+  <div class="slider">
+    <style>
+* {box-sizing: border-box}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: rgb(243, 243, 243);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding-left: 20px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+display: flex;
+flex-direction: row;
+float: left;
+padding: 15px;
+color:  rgb(33, 95, 153);
+
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* On hover */
+.prev:hover, .next:hover {
+
+  color: rgb(182, 176, 165);
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background:rgb(243, 243, 243);
+}
+
+
+
+
+
+
+h2 {color: rgb(40, 40, 175);}
+p {color: rgb(117, 115, 115);}
+
+
+</style>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <h2>1. Create user account</h2>
+    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur ipsum. In nulla ante.</p>
+  </div>
+
+<div class="mySlides">
+  <h2>2. Customize your site</h2>
+  <p >In nulla ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur ipsum. </p>
+</div>
+
+<div class="mySlides">
+  <h2>3. Get your website</h2>
+  <p >Donec vel efficitur ipsum, consectetur adipiscing elit. Donec vel efficitur ipsum. In nulla ante.</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-circle-left fa-2x"></i></a>
+<a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-circle-right fa-2x"></i></a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </div>
+
+</section>
+
+<section class="more">
+    <h3 class="txt">More benefits</h3>
+
+  </section>
+
+<section class="update">
+
+
+    <header class="td">
+    <h1>Update everything</h1>
+    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+
+  </header>
+
+  <div class="iz">
+
+  </div>
+  </section>
+</section>
+
+<section class="limit">
+    <header class="td2">
+        <h1>Limitless feature</h1>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+        <a href="#" class="btn2">Get started</a>
+      </header>
+      <div class="iz">
+
+    </div>
+</section>
+
+<section class="just">
+  <h3 class="world">Don't just take our world...</h3>
+
+</section>
+
+<section class="big-container">
+
+
+<div class="container1">
+<div class="foto">  <img src="https://picsum.photos/200/200?image=11" alt="Picsum Photo"></div>
+<div class="shadow">
+
+</div>
+<div class="info">
+
+
+
+<p>simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estÃ¡ndar de las industrias desde el aÃ±o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usÃ³ una galerÃ­a de textos y los mezclÃ³ de tal manera que logrÃ³ hacer un libro de textos especimen.</p>
+</div>
+
+<div class="name">
+  <h2>Skyler Parker</h2>
+  <h3>Founder _@Creative land</h3>
+</div>
+
+</div>
+
+
+<div class="container2">
+<div class="foto">  <img src="https://picsum.photos/200/200?image=11" alt="Picsum Photo"></div>
+<div class="shadow">
+
+</div>
+<div class="info">
+
+
+
+<p>simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estÃ¡ndar de las industrias desde el aÃ±o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usÃ³ una galerÃ­a de textos y los mezclÃ³ de tal manera que logrÃ³ hacer un libro de textos especimen.</p>
+</div>
+
+<div class="name">
+<h2>Peter Parker</h2>
+<h3>Founder _@Jelly clud</h3>
+</div>
+
+</div>
+</section>
+<section class="started">
+  <div class="start"><h3>Get started</h3></div>
+</section>
+
+<!--footer-->
+
+<footer class="footer">
+  <div class="barra">
+        <div class="logo">
+
+
+      <img src="logo.png" alt="">
+          </div>
+           <div class="reg">
+      <div class="mail">mail adress</div>
+              <div class="subs">Subscribe</div>
+            </div>
+         <div class="social">
+
+
+          <i  class="fab fa-twitter-square fa-3x"></i>
+          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-linkedin fa-3x"></i>
+          </div>
+  </div>
+<!--</footer>-->
+
+  <!--<section class="tabla">-->
+  <div class="tabla">
+
+
+  <div class="1tabla">
+
+    <ul>
+    <li class="head"><h4>Our product</h4></li>
+      <li>Web design</li>
+      <li>Web design</li>
+      <li>Web design</li>
+      <li>Web design</li>
+      <li>Logo design</li>
+    </ul>
+  </div>
+
+  <div class="2tabla">
+
+    <ul>
+  <li class="head"><h4>Company</h4></li>
+      <li>Web design</li>
+      <li>Hlep desk</li>
+      <li>Email</li>
+      <li>Socal network</li>
+
+      <li>Logo design</li>
+    </ul>
+  </div>
+
+  <div class="3tabla">
+
+    <ul>
+    <li class="head"><h4>Support</h4></li>
+    <li>Contact us</li>
+
+    </ul>
+  </div>
+
+<!--</section>-->
+
+
+</div>
+
+<div class="copy">
+  <p>featherfrancisco.fi</p>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
