@@ -5,34 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/845d55b72b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
+    </head>
+    <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="https://github.com/FranciG/" >GitHub</a>
+      <a href="https://simmer.io/@FranciG/unity-wls-2020">Unity</a>
+      <a href="https://www.linkedin.com/in/francisco-g/">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 <div class="wrapper">
-  <nav class="main-nav">
-
-    <ul>
-        <li><a href="#" >Home</a></li>
-        <li><a href="#" >GitHub</a></li>
-        <li><a href="#" >Contact me</a></li>
-
-        <li><a href="#" class="btn1">Log in</a></li>
-
-
-    </ul>
-  </nav>
+  
 <!--top container-->
 <section class="top-container">
 
   <header class="intro">
   <h1>Francisco static Website</h1>
   <p>This website was done using Javascript, CSS3 and HTML5, and jQuery to make it responsive. No frameworks used here.</p>
-  <div class="play">
-  <a href="#" class="btn">Get started</a>
-
-  <i class="far fa-play-circle fa-3x"></i>
-  <p>Watch video</p>
-</div>
+ 
 </header>
 
 
@@ -42,38 +51,48 @@
 <!--boxes section-->
 <section class="boxes">
 <div class="box">
+  <a href="https://simmer.io/@FranciG/unity-wls-2020">
   <i class="fab fa-unity fa-6x"></i>
-    <h3>Real time notification</h3>
-    <p>the majority have suffered alteration in some form, by injected humour</p>
+</a>
+    <h3>Unitiy Game</h3>
+    <p>A survival game I made using Unity and C#. It is deployed to the web. Click the Unity icon above to play it.</p>
 </div>
 
 
     <div class="box">
-        <i class="far fa-comments fa-6x"></i>
-        <h3>Social connection</h3>
-        <p>There are many variations of passages of Lorem Ipsum available, </p>
+      <a href="https://stark-peak-92286.herokuapp.com/">
+      <i class="fab fa-react fa-6x"></i>
+    </a>  
+      <h3>React Application</h3>
+      
+        <p>To create this app I used react, nodejs, express, mongodb, redux. <br>It is deployed to the web. Click the icon above check it<br> The app consists on a list of items that are fetched from the database to be displayed. If the user is not logged in , he can only watch the item, but he can't add new items. After registering, the user can log in and add/delete items. </p>
     </div>
 
 
-        <div class="box">
-        <i class="fas fa-tasks  fa-6x"></i>
-            <h3>Gradual progress</h3>
-            <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look</p>
-        </div>
+    <div class="box">
+      <a href="https://github.com/FranciG">
+        <i class="fab fa-github fa-6x"></i>
+    </a>  
+      <h3>GitHub</h3>
+      
+        <p>Checkout my other projects. Android apps using java, PIR sensor IoT project, and so on! </p>
+    </div>
 
 
 
 </section>
 <!--break-->
 <section class="how">
-  <h3>How its works?</h3>
+  <h3>Do you wanna contact me? Sure!</h3>
 
   </section>
 <!--smaller boxes -->
 <section class="sboxes">
     <div class="box">
-      <i class="fab fa-unity fa-4x"></i>
-        <h3>Create acount</h3>
+      <a href="https://www.linkedin.com/in/francisco-g/">
+      <i class="fab fa-linkedin-in fa-4x"></i>
+    </a>  
+        <h3>LinkedIn</h3>
 
     </div>
 
