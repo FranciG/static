@@ -9,8 +9,7 @@
 </head>
 <body>
 
-    </head>
-    <body>
+    
     
     <div class="topnav" id="myTopnav">
       <a href="https://github.com/FranciG/" >GitHub</a>
@@ -40,7 +39,10 @@
 
   <header class="intro">
   <h1>Francisco static Website</h1>
-  <p>This website was done using Javascript, CSS3 and HTML5, and jQuery to make it responsive. No frameworks used here.</p>
+  <p>This website was done using Javascript, CSS3 and HTML5, and jQuery. This website is responsive. No frameworks used.
+<br>
+The purpuse of this website is to create a beautiful web layout and to display some of my work during my IT engineering studies at Oulu university of applied sciences.
+  </p>
  
 </header>
 
@@ -117,7 +119,7 @@
 <!--info section-->
 <section class="infoslide">
 <div class="notes">
-  <i class="fas fa-tablet-alt fa-8x"></i>
+  <i class="fas fa-code fa-6x"></i>
 </div>
 <!--   <div class="tx">
     <h2>1.Customize your site</h2>
@@ -185,17 +187,17 @@ p {color: rgb(117, 115, 115);}
 <div class="slideshow-container">
 
   <div class="mySlides">
-    <h2>1. Create user account</h2>
-    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur ipsum. In nulla ante.</p>
+    <h2>1. JavaScript</h2>
+    <p >This slider is created using JavaScript</p>
   </div>
 
 <div class="mySlides">
-  <h2>2. Customize your site</h2>
-  <p >In nulla ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel efficitur ipsum. </p>
+  <h2>2. Web layout</h2>
+  <p > I only created the web layout here. No real content to de displayed. </p>
 </div>
 
 <div class="mySlides">
-  <h2>3. Get your website</h2>
+  <h2>3. And the last one</h2>
   <p >Donec vel efficitur ipsum, consectetur adipiscing elit. Donec vel efficitur ipsum. In nulla ante.</p>
 </div>
 
@@ -210,34 +212,7 @@ p {color: rgb(117, 115, 115);}
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
+<script src="SlideMenu.js"></script>
   </div>
 
 </section>
@@ -247,34 +222,36 @@ function showSlides(n) {
 
   </section>
 
-<section class="update">
-
-
-    <header class="td">
-    <h1>Update everything</h1>
-    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-
-  </header>
-
-  <div class="iz">
-
-  </div>
-  </section>
-</section>
-
-<section class="limit">
-    <header class="td2">
-        <h1>Limitless feature</h1>
+  <div class="centered">
+    <section class="update">
+    
+    
+        <header class="td">
+        <h1>Update everything</h1>
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-        <a href="#" class="btn2">Get started</a>
+    
       </header>
+    
       <div class="iz">
-
+    
+      </div>
+     
+    </section>
+    
+    <section class="limit">
+        <header class="td2">
+            <h1>Limitless feature</h1>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+            
+          </header>
+          <div class="iz">
+    
+        </div>
+    </section>
     </div>
-</section>
 
 <section class="just">
-  <h3 class="world">Don't just take our world...</h3>
+  <h3 class="world">Below areas use grid</h3>
 
 </section>
 

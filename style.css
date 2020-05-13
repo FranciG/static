@@ -7,7 +7,7 @@
     --title: rgb(40, 40, 175);
 }
 html {
-    box-sizing: border-box;
+  /*box-sizing: border-box;*/
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(243, 243, 243);
 
@@ -15,9 +15,10 @@ html {
 
 body {
 
-    margin: 0px 50px;
+  margin: 0px 0px;
     line-height: 1.4;
-    padding-left: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-image: url(top.png),url(side.png) ;
     /*background-origin: border-box; */
     background-repeat: no-repeat;
@@ -60,7 +61,7 @@ body {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: center;
     display: block;
   }
 }
@@ -75,7 +76,7 @@ body {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 }
 /**/
@@ -359,16 +360,21 @@ padding: 30px;
         border-bottom: 1px solid rgb(182, 182, 182);
     }
   /*first text down*/
-      .update {
-          display:grid;
-          grid-gap:20px;
-          justify-items: auto;
-          grid-template-columns: 45% 45%;
-          grid-template-areas:
-          'iz td'
-          'iz td'
-         ;
-      }
+
+  .centered {
+    width: 100%;
+    margin: auto;
+  }
+
+  .update {
+    display:grid;
+    grid-gap:0px;
+    justify-items: normal;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    'iz td'
+   ;
+}
 
       .iz {
           grid-area: iz;
@@ -376,7 +382,7 @@ padding: 30px;
           min-height: 400px;
           background-size: cover;
           background-position: center;
-          padding: 3rem;
+          
       }
 
       .td {
@@ -393,16 +399,14 @@ padding: 30px;
 
       /*second*/
       .limit {
-          display:grid;
-          grid-gap:20px;
-          justify-items: auto;
-          grid-template-columns: 45% 45%;
-          grid-template-areas:
+        display:grid;
+        grid-gap:00px;
+        justify-items: normal;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
           'td2 iz'
-          'td2 iz'
-
-         ;
-      }
+        ;
+     }
 
 
 
