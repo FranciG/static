@@ -84,7 +84,7 @@ body {
   background-image: url(bottom.png) ;
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: contain;
+ 
   background-origin:border-box;
 }
 
@@ -551,7 +551,7 @@ justify-content:flex-start;
 .reg {
 
   display: flex;
-  justify-content:space-between; */
+  justify-content:space-between; 
 }
 .barra .subs {
 
