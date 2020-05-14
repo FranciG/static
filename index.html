@@ -85,33 +85,34 @@ The purpuse of this website is to create a beautiful web layout and to display s
 </section>
 <!--break-->
 <section class="how">
-  <h3>Do you wanna contact me? Sure!</h3>
+  <h3>Links to some other projects</h3>
 
   </section>
 <!--smaller boxes -->
 <section class="sboxes">
     <div class="box">
-      <a href="https://www.linkedin.com/in/francisco-g/">
-      <i class="fab fa-linkedin-in fa-4x"></i>
+      <a href="https://github.com/FranciG/PIR-seonsor-IoT-project">
+        <i class="fab fa-python fa-4x"></i>
     </a>  
-        <h3>LinkedIn</h3>
+        <h3>IoT project</h3>
 
     </div>
 
+    <div class="box">
+      <a href="https://github.com/FranciG/lab4.4">
+        <i class="fab fa-android fa-4x"></i>
+    </a>  
+        <h3>Android app that uses an API so fetch stock market values.</h3>
 
-        <div class="box">
-<i class="fas fa-pencil-ruler fa-4x"></i>
-            <h3>Customize your site</h3>
+    </div>
 
-        </div>
+    <div class="box">
+      <a href="https://github.com/FranciG/shop">
+        <i class="fab fa-php fa-4x"></i>
+    </a>  
+        <h3>Symfony crud app</h3>
 
-
-            <div class="box">
-<i class="fab fa-firefox fa-4x"></i>
-                <h3>Get your website</h3>
-
-            </div>
-
+    </div>
 
 
     </section>
@@ -218,7 +219,7 @@ p {color: rgb(117, 115, 115);}
 </section>
 
 <section class="more">
-    <h3 class="txt">More benefits</h3>
+    <h3 class="txt">Other projects</h3>
 
   </section>
 
@@ -227,8 +228,19 @@ p {color: rgb(117, 115, 115);}
     
     
         <header class="td">
-        <h1>Update everything</h1>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+        <h1>Internet of things project using MQTT protocol </h1>
+        <p>  
+           Motion detection system, capable of collect data through the usage of sensors, with the intention of knowing how many persons are moving by the location where the sensor is placed.​
+           <br>Software used:​ <br>
+
+           -Python in order to interact with the sensors to obtain and process sensor readings.​ <br>
+           
+           -MySQL database server in order to store collected data.​ <br>
+           
+           -Web interface to display the results.​ <br>
+           The project structure consisted on a raspberry pi as a publisher, sending the data collected from the sensor to a MQTT broker server. Then, another server was subscribed to the topic the raspberry pi was publising to, collecting the PIR sensor data to store it on a MySQL database. <br>
+           finally, the data was displayed using a web interface, by queries to the database.
+          </p>
     
       </header>
     
@@ -240,18 +252,18 @@ p {color: rgb(117, 115, 115);}
     
     <section class="limit">
         <header class="td2">
-            <h1>Limitless feature</h1>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+            <h1>Android development using Java</h1>
+            <p>I participated in the development of an Android app, using Android Studio and Java. My work consisted in, among other things, accesing to device's built-in sensors, ​displaying information obtained from gps such as speed, location and displaying orientation in a user-friendly way.</p>
             
           </header>
-          <div class="iz">
+          <div class="iz2">
     
         </div>
     </section>
     </div>
 
 <section class="just">
-  <h3 class="world">Below areas use grid</h3>
+  <h3 class="world">Some more details</h3>
 
 </section>
 
@@ -259,7 +271,7 @@ p {color: rgb(117, 115, 115);}
 
 
 <div class="container1">
-<div class="foto">  <img src="https://picsum.photos/200/200?image=11" alt="Picsum Photo"></div>
+<div class="foto">  <img src="graph.png" alt="Data"></div>
 <div class="shadow">
 
 </div>
@@ -267,32 +279,35 @@ p {color: rgb(117, 115, 115);}
 
 
 
-<p>simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estÃ¡ndar de las industrias desde el aÃ±o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usÃ³ una galerÃ­a de textos y los mezclÃ³ de tal manera que logrÃ³ hacer un libro de textos especimen.</p>
+<p>The data was pulled from the database, by queries to display activation times in a defined time range.</p>
 </div>
 
 <div class="name">
-  <h2>Skyler Parker</h2>
-  <h3>Founder _@Creative land</h3>
+  <h2>IoT project</h2>
+  <h3>User interface</h3>
 </div>
 
 </div>
 
 
 <div class="container2">
-<div class="foto">  <img src="https://picsum.photos/200/200?image=11" alt="Picsum Photo"></div>
+<div class="foto">  <img src="unity.png" alt="Unity"></div>
 <div class="shadow">
 
 </div>
 <div class="info">
 
+<p>The player appears in a prefedifned point when the game starts.  The camera chases the player as he walks around the map.
+  The enemies appear in different spawn points pre-defined in the map automatically at a defined time interval (every 15/20 seconds, depending on the settings of the spawn point).
+  Power-ups appear in a simmilar way.
+  The player starts with a level of health, and can keep con getting power ups, until maximun health is reached. When health is 0, the game is terminated. There is a healthbar to display health level.
+  Enemies have a script to wander around the map, but when the player passes trough a circle collider, a chasing script is triggered, so enemies start to chase the player until the player is out of the circle collider.</p>
 
-
-<p>simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estÃ¡ndar de las industrias desde el aÃ±o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usÃ³ una galerÃ­a de textos y los mezclÃ³ de tal manera que logrÃ³ hacer un libro de textos especimen.</p>
 </div>
 
 <div class="name">
-<h2>Peter Parker</h2>
-<h3>Founder _@Jelly clud</h3>
+<h2>Unity</h2>
+<h3>C#</h3>
 </div>
 
 </div>

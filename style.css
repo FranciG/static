@@ -378,12 +378,22 @@ padding: 30px;
 
       .iz {
           grid-area: iz;
-          background: url(https://picsum.photos/500/300);
+          background: url(IoT.jpg);
           min-height: 400px;
           background-size: cover;
           background-position: center;
           
       }
+
+      .iz2 {
+        grid-area: iz2;
+        background: url(android.png);
+        min-height: 600px;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
 
       .td {
           display: grid;
@@ -404,7 +414,7 @@ padding: 30px;
         justify-items: normal;
         grid-template-columns: 50% 50%;
         grid-template-areas:
-          'td2 iz'
+          'td2 iz2'
         ;
      }
 
