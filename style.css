@@ -79,10 +79,7 @@ body {
     text-align: center;
   }
 }
-/**/
-.started {
 
-}
 
 
 .btn1 {
@@ -116,9 +113,7 @@ body {
 
 }
 
-.btn:hover {
-  background-color: blue;
-}
+
 
 img {
     max-width: 100%;
@@ -164,51 +159,25 @@ color: rgb(33, 95, 153);
 text-shadow: -1px 0 rgb(33, 95, 153), 0 1px rgb(33, 95, 153), 1px 0 rgb(33, 95, 153), 0 -1px rgb(33, 95, 153);
 
 }
-.btn2 {
-
-    max-width: 160px;
-
-    background-color: rgb(33, 95, 153);
-    color: white;
-    text-decoration: none;
-    border: 0;
-    box-shadow:10px 20px 60px rgb(33, 95, 153);
-    text-align: center;
-    border-radius: 5px;
-    padding: 15px;
-
-  }
-
-
-
-
-
-
-  .btn2:hover {
-  background-color: darkblue;
-  }
 
 /*top container*/
 
 
 .top-container {
-    display:grid;
-    grid-gap:20px;
-    justify-items: auto;
-    grid-template-columns: 45% 45%;
-    grid-template-areas:
-    'showcase top-box'
-    'showcase top-box'
-   ;
+  display:flex;
+      
+  
+      justify-content: center;
+      align-items: center;
+
 }
 
-.intro {
-    display: grid;
-    grid-area: showcase;
-    justify-content:center;
-    padding: 40px;
-    color: var(--text);
-    padding: 30px 70px;
+.slideshow-container {
+  display:flex;
+      
+  
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -305,10 +274,10 @@ padding: 30px;
   }
 
   .infoslide {
-    display:grid;
+   
     text-align: center;
     padding: 1.5rem 2rem;
-    grid-template-columns: 33.3% auto 33.3%;
+   
 
 
     grid-template-areas:
@@ -510,10 +479,9 @@ padding: 30px;
 }
 /*final get started button*/
 .started {
-
-                padding: 80px;
-                list-style: none;
-                display: grid;
+display: flex;
+  justify-content: center;
+  align-items: center;;
 
   height: 200px;
 
@@ -521,7 +489,7 @@ padding: 30px;
 }
 .started .start {
     padding: 10px ;
-  max-width: 180px;
+  max-width: 150px;
 
   height: 80px;
 
@@ -547,14 +515,7 @@ padding: 30px;
 
 
 
-  .logo  {
 
-      display: flex;
-      flex-direction: row;
-      padding: 20px;
-      margin: 50px;
-
-  }
 
 
 
@@ -567,7 +528,8 @@ padding: 30px;
       background-image: url(bottom.png) ;
       background-repeat: no-repeat;
       background-position: bottom left;
-     
+      justify-content: center;
+      align-items: center;
       background-origin:border-box;
   }
 
@@ -687,5 +649,72 @@ align-items: center;
   }
 
 
-/**/
+/*slideshow*/
 
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
