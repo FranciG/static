@@ -715,15 +715,8 @@ align-items: center;
 }
 }
 
-@media (max-width:660px) {
 
-  .main-nav ul {
 
-   flex-direction: column;
-
-   width: 100%;
-
-  }
 
   .main-nav .logo {
     display: none;
@@ -738,13 +731,7 @@ align-items: center;
   .tabla {
     margin-left: 0px;
   }
-}
 
-/*backgrounds*/
 
-.body {
-background-image: url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
-background-repeat: no-repeat;
-background-size: 300px 100px;
-background-position: center right;
- }
+/**/
+
