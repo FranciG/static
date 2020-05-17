@@ -57,8 +57,16 @@ body {
 .topnav .icon {
   display: none;
 }
+@media screen and (max-width: 600px) {
+  .slideshow-container
+   {
+    max-width: 400px;
+    max-height: 200px;
+  }
+}
 
 @media screen and (max-width: 600px) {
+  .slideshow-container
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: center;
